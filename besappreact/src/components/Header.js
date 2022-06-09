@@ -1,4 +1,5 @@
 import NavBar from "./NavBar"
+import ItemListCOntainer from "./itemListContainer";
 
 const Header = (greeting) =>{
 
@@ -8,6 +9,7 @@ const Header = (greeting) =>{
         <header>
         <h1>Bes Objetos</h1>
           <NavBar/>
+          <ItemListCOntainer/>
         </header>
 
     )
