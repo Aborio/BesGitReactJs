@@ -1,5 +1,5 @@
 import NavBar from "./NavBar"
-import ItemListCOntainer from "./itemListContainer";
+import ItemListCOntainer from "./ItemListContainer";
 
 const Header = (greeting) =>{
 
