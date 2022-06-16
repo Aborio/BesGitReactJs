@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import {useState} from "react";
+import Main from "./components/Main";
 
 
 
@@ -14,7 +15,7 @@ function App (){
 
       <Header mensaje = "Bienvenido!" />
     
-    
+      <Main/>
     
     
     </>
