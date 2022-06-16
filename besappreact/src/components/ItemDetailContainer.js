@@ -1,22 +1,23 @@
-import CustomFetch from "../utils/customFetch";
-import productos from "../utils/productos";
+import traerProducto from "../utils/producto";
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 const ItemDetailContainer = () => {
-    const [items,setItems] = useState([]);
+    const [product,setProduct] = useState({});
 
     useEffect(() => {
-        CustomFetch(3000, productos)
-        .then((resultado) =>{ setItems(resultado);})
+        traerProducto()
+        .then((resultado) =>{ setProduct(resultado);})
         
         .catch((error) => {console.log(error);
     });
         
-    }, [items]);
+    }, []);
+
+    console.log(product);
 
     return (
     <div>
-        <ItemDetail items={items} />
+        <ItemDetail product={product}/>
     </div>)
 };
 

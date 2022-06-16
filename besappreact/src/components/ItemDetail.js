@@ -2,13 +2,13 @@
 
 
 
-const ItemDetail = ({items}) => {
+const ItemDetail = ({product}) => {
 
     return (
         <div>
-            <h2>{items.name}</h2>
-            <img src={items.image} alt={items.name} width="400"/>
-            <p>{items.descripcion}</p>
+            <h2>{product.name}</h2>
+            <img src={product.image} alt={product.name} width="400"/>
+            <p>{product.descripcion}</p>
         </div>
         
     
