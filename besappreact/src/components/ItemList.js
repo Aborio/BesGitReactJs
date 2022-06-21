@@ -1,3 +1,4 @@
+
 import Item from "./Item";
 const ItemList = ({productos}) =>{
     return(
@@ -7,8 +8,10 @@ const ItemList = ({productos}) =>{
             name={p.name}
             image={p.image}
             key={p.id}
-            stock={p.stock}   
+            stock={p.stock}
+            precio={p.precio}   
             />)
+            
             )
         
 }

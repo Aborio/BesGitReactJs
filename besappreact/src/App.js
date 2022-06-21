@@ -1,6 +1,7 @@
-import Header from "./components/Header";
+import Header from "./components/view/Header";
 import {useState} from "react";
-import Main from "./components/Main";
+import Main from "./components/view/Main";
+import {BrowserRouter} from "react-router-dom"
 
 
 
@@ -12,10 +13,10 @@ function App (){
     return (
     
     <>
-
+      <BrowserRouter>
       <Header mensaje = "Bienvenido!" />
-    
       <Main/>
+      </BrowserRouter>
     
     
     </>

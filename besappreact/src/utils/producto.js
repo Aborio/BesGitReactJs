@@ -7,6 +7,7 @@ const producto = {
     descripcion: "Descripcion del producto 1"
     }
 
+
     const traerProducto = () => {
         return new Promise ((resolve) => {
             setTimeout(() => {

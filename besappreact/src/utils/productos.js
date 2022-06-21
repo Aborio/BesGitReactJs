@@ -17,7 +17,29 @@ const productos = [{
         stock: 8,
         precio: 300,
         descripcion: "Descripcion del producto 3"
-    }   
+    },
+    {id: 4,
+        name: "Producto 4",
+        image: "https://picsum.photos/200/300",
+        stock: 8,
+        precio: 2444,
+        descripcion: "Descripcion del producto 3"
+    },
+    {id: 5,
+        name: "Producto 5",
+        image: "https://picsum.photos/200/300",
+        stock: 2,
+        precio: 1445,
+        descripcion: "Descripcion del producto 3"
+    },
+    {id: 6,
+        name: "Producto 6",
+        image: "https://picsum.photos/200/300",
+        stock: 8,
+        precio: 300,
+        descripcion: "Descripcion del producto 3"
+    }
+
 ]
 
 export default productos;

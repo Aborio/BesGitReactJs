@@ -1,5 +1,5 @@
-import NavBar from "./NavBar"
-import ItemListCOntainer from "./ItemListContainer";
+import NavBar from "../NavBar"
+import {Link} from "react-router-dom"
 
 const Header = (greeting) =>{
 
@@ -7,9 +7,10 @@ const Header = (greeting) =>{
 
     return(
         <header>
-        <h1>Bes Objetos</h1>
+        <Link to="/">
+          <h1>Bes Objetos</h1>
+        </Link>
           <NavBar/>
-          <ItemListCOntainer/>
         </header>
 
     )
