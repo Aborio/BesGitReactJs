@@ -1,13 +1,13 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 const ItemCount = ({ stock, initial, onAdd }) => {
     stock = stock || 5;
-    const [count, setCount] = useState(0);
+    initial = initial || 1;
+    const [count, setCount] = useState(1);
     
 
     const aumentarContador = () => {
         if (count < stock) {
             setCount(count + 1);
-            onAdd(count + 1);
         setCount(count + 1);}}
 
     const bajarContador = () => {
@@ -15,7 +15,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         setCount(count - 1);}}
     
     const confirmarContador = () => {
-        alert("Se confirmaron " + count + " productos");
+       onAdd(count);
     }
 
     return (

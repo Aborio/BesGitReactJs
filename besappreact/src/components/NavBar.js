@@ -12,15 +12,17 @@ const NavBar = () =>{
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li className="nav-item">
-                        <Link to="category/Productos1" className="nav-link" aria-current="page" href="#">Productos1</Link>
+                        <Link to="category/Productos1" className="nav-link" aria-current="page">Productos1</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="category/Productos2" className="nav-link" href="#">Productos2</Link>
+                        <Link to="category/Productos2" className="nav-link">Productos2</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="category/Productos3" className="nav-link" href="#">Productos3</Link>
+                        <Link to="category/Productos3" className="nav-link">Productos3</Link>
                     </li>
-
+                    <li className="nav-item">
+                        <Link to="/Carrito" className="nav-link">Carrito</Link>
+                    </li>
                 </ul>
             </div>
         </div>

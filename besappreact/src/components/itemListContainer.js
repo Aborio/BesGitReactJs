@@ -1,14 +1,12 @@
 
 import { useEffect, useState } from 'react';
-import CustomFetch from '../utils/customFetch';
+import {CustomFetch} from '../utils/customFetch';
 import productos from '../utils/productos';
 import ItemList from './ItemList';
-import {useParams} from "react-router-dom"
 
 
 const ItemListCOntainer = ({greeting}) => {
     const [items,setItems] = useState([]);
-    const resultado = useParams()
     
 
     useEffect(() => {
@@ -18,7 +16,7 @@ const ItemListCOntainer = ({greeting}) => {
     }, [items]);
 
     
-    const onAdd = () => {}
+
         return (
             <div>
                 <ItemList productos={items}/>
