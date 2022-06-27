@@ -1,14 +1,18 @@
 // import productos from "../utils/productos";
-
+import {Link} from "react-router-dom"
+import { useState } from "react";
 import ItemCount from "./ItemCount";
 
 
 
 const ItemDetail = ({name,precio,descripcion,image}) => {
 
-    const onAdd = (count) => {
-        alert("se confirmaron "+ count + " productos")
+    const [count, setCount] = useState(false)
 
+    const onAdd = (count) => {
+        setCount(count)
+        alert("se agrego "+ count + " productos")
+        setCount(true);
     }
 
 
@@ -19,7 +23,13 @@ const ItemDetail = ({name,precio,descripcion,image}) => {
             <h3>Precio {precio}</h3>
             <img src={image} alt={name} width="400"/>
             <p>{descripcion}</p>
-            <ItemCount onAdd={onAdd}/>
+            {count ? (
+                <>
+                    <h3>Se confirmaron los productos</h3>
+                    <Link to="/Carrito">Ir a carrito</Link>
+                </>
+            ):(<ItemCount onAdd={onAdd}/>)}
+            
         </div>
         
     

@@ -1,3 +1,5 @@
+
+import 'react-loading-skeleton/dist/skeleton.css'
 import ItemDetailContainer from "../ItemDetailContainer"
 import {Routes, Route} from "react-router-dom"
 import ItemListCOntainer from "../ItemListContainer"
