@@ -1,9 +1,9 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { useState } from "react";
 
 export const contexto = createContext();
 
-const Provider = contexto.Provider
+export const Provider = contexto.Provider
 
 const MiProvider = ({children}) =>{
 

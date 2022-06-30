@@ -1,11 +1,15 @@
 // import productos from "../utils/productos";
 import {Link} from "react-router-dom"
-import { useState } from "react";
+import { useState, useContext } from "react";
+import {contexto} from "./CartContext"
 import ItemCount from "./ItemCount";
 
 
 
 const ItemDetail = ({name,precio,descripcion,image}) => {
+
+    const context = useContext(contexto)
+    console.log(context)
 
     const [count, setCount] = useState(false)
 
@@ -25,7 +29,7 @@ const ItemDetail = ({name,precio,descripcion,image}) => {
             <p>{descripcion}</p>
             {count ? (
                 <>
-                    <h3>Se confirmaron los productos</h3>
+                    <button onClick={() => context.agregarCarrito()}>Se confirmaron</button>
                     <Link to="/Carrito">Ir a carrito</Link>
                 </>
             ):(<ItemCount onAdd={onAdd}/>)}
