@@ -4,7 +4,7 @@ import { useState, useContext } from 'react';
 import { contexto } from './CartContext';
 import ItemCount from './ItemCount';
 
-const ItemDetail1 = ({ name, precio, descripcion, image }) => {
+const ItemDetail = ({ name, precio, descripcion, image }) => {
     const context = useContext(contexto);
     console.log(context);
 
