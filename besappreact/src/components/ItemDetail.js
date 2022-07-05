@@ -9,7 +9,6 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({name,precio,descripcion,image}) => {
 
     const context = useContext(contexto)
-    console.log(context)
 
     const [count, setCount] = useState(false)
 

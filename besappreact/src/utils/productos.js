@@ -23,21 +23,21 @@ const productos = [{
         image: "https://picsum.photos/200/300",
         stock: 8,
         precio: 2444,
-        descripcion: "Descripcion del producto 3"
+        descripcion: "Descripcion del producto 4"
     },
     {id: 5,
         name: "Producto 5",
         image: "https://picsum.photos/200/300",
         stock: 2,
         precio: 1445,
-        descripcion: "Descripcion del producto 3"
+        descripcion: "Descripcion del producto 5"
     },
     {id: 6,
         name: "Producto 6",
         image: "https://picsum.photos/200/300",
         stock: 8,
         precio: 300,
-        descripcion: "Descripcion del producto 3"
+        descripcion: "Descripcion del producto 6"
     }
 
 ]

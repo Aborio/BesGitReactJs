@@ -13,7 +13,7 @@ export const getProductById = (id) => {
     return new Promise ((resolve) => {
         setTimeout(() => {
             resolve(productos.find(prod => prod.id === id));
-        }, 1000 );
+        }, 200 );
     });
 }
 
