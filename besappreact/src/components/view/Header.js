@@ -1,19 +1,17 @@
-import NavBar from "../NavBar"
-import {Link} from "react-router-dom"
+import NavBar from '../NavBar';
+import { Link } from 'react-router-dom';
 
-const Header = (greeting) =>{
+const Header = (greeting) => {
+    //alert(greeting.mensaje);
 
-    alert(greeting.mensaje);
-
-    return(
+    return (
         <header>
-        <Link to="/">
-          <h1>Bes Objetos</h1>
-        </Link>
-          <NavBar/>
+            <Link to='/'>
+                <h1>Bes Objetos</h1>
+            </Link>
+            <NavBar />
         </header>
+    );
+};
 
-    )
-}
-
-export default Header
+export default Header;
