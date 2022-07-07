@@ -8,28 +8,14 @@ const ItemDetail = ({ id, name, precio, descripcion, image }) => {
     const { agregarCarrito } = useContext(contexto);
     const [renderItemCount, setRenderItemCount] = useState(false);
 
-<<<<<<< HEAD
 
-const ItemDetail = ({name,precio,descripcion,image}) => {
-
-    const context = useContext(contexto)
-
-    const [count, setCount] = useState(false)
-
-    const onAdd = (count) => {
-        setCount(count)
-        alert("se agrego "+ count + " productos")
-        setCount(true);
-    }
-
-=======
     const onAdd = (cantidad) => {
         const newItem = { id, name, precio, descripcion, image, cantidad };
         agregarCarrito(newItem);
         setRenderItemCount(true);
         //alert('se agrego ' + count + ' productos');
     };
->>>>>>> 2bfe8e5bd7a2ff53e3e1986fb688b5285d12e5ec
+
 
     return (
         <div>

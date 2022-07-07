@@ -14,14 +14,15 @@ const Carrito = () => {
                 {carrito.length > 0 ? (
                     <>
                         {carrito.map((item) => {
-                            return (
+                            return (<ul>
                                 <li key={item.id}>
-                                    Descripcion: {item.descripcion}
-                                    Cantidad: {item.cantidad}
-                                    Precio Unitario: {item.precio}
-                                    Precio Total: {item.precio * item.cantidad}
+                                    <li>Nombre: {item.name}</li>
+                                    <li>Cantidad: {item.cantidad}</li>
+                                    <li>Precio Unitario: {item.precio}</li></li>
+                                    <li>Precio Total: {item.precio * item.cantidad}
                                     <button onClick={() => sacarCarrito(item)}>X</button>
                                 </li>
+                                </ul>
                             );
                         })}
                     </>
@@ -30,7 +31,7 @@ const Carrito = () => {
                 )}
             </ul>
             <button onClick={vaciarCarrito}>vaciar</button>
-            <Link to='/chekout'>Comprar</Link>
+            <Link to='/Chekout'>Comprar</Link>
         </div>
     );
 };
