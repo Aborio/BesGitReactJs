@@ -22,13 +22,15 @@ const Chekout = () => {
             total : precio_total
         }
 
-        const consulta = addDoc(collectionOrder)
-        console.log(consulta)
+        // const consulta = addDoc(collectionOrder, orderData)
+        
   
         // addDoc(collectionOrder, orderData)
         // .then((resolve) =>{
         //     console.log(resolve);
         // })
+
+        alert("Gracias por su compra " + orderData.buyer.name)
         
     }
 
