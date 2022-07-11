@@ -5,7 +5,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const Chekout = () => {
 
-    const {carrito,precio_total} = useContext(contexto)
+    const {vaciarCarrito ,carrito,precio_total} = useContext(contexto)
 
     const buy = () =>{
 
@@ -31,6 +31,7 @@ const Chekout = () => {
         // })
 
         alert("Gracias por su compra " + orderData.buyer.name)
+        vaciarCarrito();
         
     }
 
