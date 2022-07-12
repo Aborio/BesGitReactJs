@@ -1,4 +1,4 @@
-// import productos from "../utils/productos";
+
 import { Link } from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { contexto } from './CartContext';
@@ -13,7 +13,7 @@ const ItemDetail = ({ id, name, precio, descripcion, image }) => {
         const newItem = { id, name, precio, descripcion, image, cantidad };
         agregarCarrito(newItem);
         setRenderItemCount(true);
-        //alert('se agrego ' + count + ' productos');
+        alert('se agrego ' + newItem + ' productos');
     };
 
 

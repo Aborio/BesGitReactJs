@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from 'react';
 import {CustomFetch} from '../utils/customFetch';
-import productos from '../utils/productos';
 import ItemList from './ItemList';
 import {db} from "../firebase";
 import { collection, getDocs } from 'firebase/firestore';
@@ -24,7 +23,6 @@ const ItemListCOntainer = ({greeting}) => {
 
             setItems(prod_map);
         })
-         /*setItems(resultado*/
         .catch((error)=>{
             console.log(error)
         })

@@ -1,7 +1,6 @@
-// import traerProducto from "../utils/producto";
+
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
-import { getProductById } from "../utils/customFetch";
 import { useParams } from "react-router-dom";
 import {db} from "../firebase";
 import { collection, getDoc, doc } from 'firebase/firestore';

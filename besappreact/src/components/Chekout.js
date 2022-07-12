@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { db } from "../firebase";
 import { contexto } from './CartContext';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, serverTimestamp } from 'firebase/firestore';
 
 const Chekout = () => {
 

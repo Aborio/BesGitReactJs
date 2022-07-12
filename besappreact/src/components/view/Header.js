@@ -2,7 +2,7 @@ import NavBar from '../NavBar';
 import { Link } from 'react-router-dom';
 
 const Header = (greeting) => {
-    //alert(greeting.mensaje);
+    alert(greeting.mensaje);
 
     return (
         <header>
